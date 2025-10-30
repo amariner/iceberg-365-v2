@@ -18,7 +18,11 @@ const Header: React.FC = () => {
     if (element) {
       const headerOffset = 80;
       const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+      const viewportHeight = window.innerHeight;
+      const elementHeight = element.offsetHeight;
+      
+      // Calcular la posición para centrar la sección verticalmente en el viewport
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset - (viewportHeight / 2) + (elementHeight / 2);
 
       window.scrollTo({
         top: offsetPosition,
