@@ -1,15 +1,13 @@
+
 import React, { useState } from 'react';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { name: '¿Quienes somos?', href: '#' },
-    { name: 'Amazon', href: '#' },
-    { name: 'Marketplaces', href: '#' },
-    { name: 'Publicidad', href: '#' },
-    { name: 'Ecommerce', href: '#' },
-    { name: 'Blog', href: '#' },
+    { name: 'Servicios', href: '#servicios' },
+    { name: 'Objetivos', href: '#objetivos' },
+    { name: 'Testimonios', href: '#testimonios' },
   ];
 
   return (

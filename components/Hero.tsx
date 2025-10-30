@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const ArrowIcon: React.FC = () => (
@@ -12,29 +13,25 @@ const Hero: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">
-            <h1 className="font-dm-sans-black text-5xl md:text-7xl lg:text-[5.5rem] leading-none text-[#2B2925] tracking-tighter">
-              LOS REEMBOLSOS DE AMAZON FBA QUE IMPULSAN TU{' '}
+            <p className="font-dm-mono text-lg text-[#DD8B26] font-bold tracking-widest">¿CÓMO PODEMOS AYUDARTE?</p>
+            <h1 className="font-dm-sans-black text-5xl md:text-6xl lg:text-7xl leading-none text-[#2B2925] tracking-tighter mt-4">
+              Concéntrate en tu{' '}
               <span className="relative inline-block">
-                CRECIMIENTO
+                negocio
                 <span className="absolute left-0 right-0 bottom-1 h-3 md:h-5 bg-[#DD8B26]/80 -z-10"></span>
               </span>
             </h1>
             <p className="mt-8 text-lg md:text-xl max-w-xl mx-auto lg:mx-0 text-[#62605C]">
-              Auditamos con más consistencia. Encontramos más discrepancias. Conciliamos más reclamaciones. Los reembolsos llegan, desbloqueando una fuente de ingresos adicional para reinvertir en tu negocio de Amazon. Es más que la devolución de tu dinero, es el camino a seguir.
+              Nosotros diseñamos tu estrategia en Amazon y otros Marketplaces para que incrementes tus ventas.
             </p>
             <div className="mt-10">
-              <a href="#" className="bg-transparent border-2 border-[#DD8B26] text-[#2B2925] text-base font-bold py-4 px-8 rounded-full hover:bg-[#DD8B26] hover:text-white transition-colors flex items-center justify-center max-w-xs mx-auto lg:mx-0">
-                Descubre Más <ArrowIcon />
+              <a href="#servicios" className="bg-transparent border-2 border-[#DD8B26] text-[#2B2925] text-base font-bold py-4 px-8 rounded-full hover:bg-[#DD8B26] hover:text-white transition-colors flex items-center justify-center max-w-sm mx-auto lg:mx-0">
+                Descubre Nuestros Servicios <ArrowIcon />
               </a>
             </div>
           </div>
           <div className="relative">
-             <img src="https://picsum.photos/seed/iceberg-hero/800/600" alt="Connect your Amazon store" className="rounded-2xl shadow-2xl w-full" />
-             <div className="absolute inset-0 bg-black/20 rounded-2xl flex items-center justify-center">
-                <div className="w-20 h-20 bg-white/30 rounded-full flex items-center justify-center backdrop-blur-sm cursor-pointer">
-                    <svg className="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd"></path></svg>
-                </div>
-             </div>
+             <img src="https://iceberg-25-v1.netlify.app/_next/image?url=%2Fbost-amazon.jpg&w=640&q=75" alt="Vendedora de Amazon trabajando en su laptop" className="rounded-2xl shadow-2xl w-full" />
           </div>
         </div>
       </div>

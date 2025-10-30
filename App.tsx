@@ -2,15 +2,10 @@
 import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import Intro from './components/Intro';
 import ValueProposition from './components/ValueProposition';
 import WhoWeHelp from './components/WhoWeHelp';
-import ClientLogos from './components/ClientLogos';
 import Testimonials from './components/Testimonials';
-import FAQ from './components/FAQ';
-import Compliance from './components/Compliance';
-import Stats from './components/Stats';
-import Resources from './components/Resources';
+import CTA from './components/CTA';
 import Footer from './components/Footer';
 
 const App: React.FC = () => {
@@ -19,15 +14,10 @@ const App: React.FC = () => {
       <Header />
       <main>
         <Hero />
-        <Intro />
         <ValueProposition />
         <WhoWeHelp />
-        <ClientLogos />
         <Testimonials />
-        <FAQ />
-        <Compliance />
-        <Stats />
-        <Resources />
+        <CTA />
       </main>
       <Footer />
     </div>

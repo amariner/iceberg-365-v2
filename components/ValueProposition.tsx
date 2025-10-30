@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const ArrowIcon: React.FC = () => (
@@ -7,17 +8,14 @@ const ArrowIcon: React.FC = () => (
 );
 
 const FeatureCard: React.FC<{ 
-  topTitle: string; 
-  topTitleColor: string;
-  mainTitle: string; 
+  number: string; 
+  title: string; 
   description: string; 
-}> = ({ topTitle, topTitleColor, mainTitle, description }) => (
-  <div className="p-8">
-    <div className="mb-4">
-        <div className={`font-bold text-3xl ${topTitleColor}`}>{topTitle}</div>
-        <div className="font-dm-sans-black text-6xl text-white -mt-4">{mainTitle}</div>
-    </div>
-    <p className="text-[#cbc8c5] text-lg mt-8">{description}</p>
+}> = ({ number, title, description }) => (
+  <div className="bg-[#3e3b36] p-8 rounded-2xl">
+    <div className="font-dm-mono text-5xl text-[#DD8B26] font-bold">{number}</div>
+    <h3 className="font-dm-sans-black text-3xl text-white mt-4">{title}</h3>
+    <p className="text-[#cbc8c5] text-lg mt-4">{description}</p>
   </div>
 );
 
@@ -25,64 +23,60 @@ const FeatureCard: React.FC<{
 const ValueProposition: React.FC = () => {
   const features = [
     {
-      topTitle: "MÁS",
-      mainTitle: "CONSISTENCIA",
-      topTitleColor: "text-[#DD8B26]",
-      description: "Iceberg365 audita decenas de miles de millones de dólares en transacciones de Amazon FBA diariamente. Y ese tipo de consistencia significa que nunca tendrás que auditar a las personas que se supone que deben auditar por ti.",
+      number: "01",
+      title: "Optimización de ACOS y Publicidad",
+      description: "Sabemos que un ACOS controlado es clave para la rentabilidad. Analizamos tus campañas y aplicamos una estrategia avanzada para mejorar tu ACOS de forma consistente, asegurando que tus ventas no solo se mantengan, sino que crezcan.",
     },
     {
-      topTitle: "MÁS",
-      mainTitle: "EFICIENCIA",
-      topTitleColor: "text-[#76B4A2]",
-      description: "Nuestro tenaz equipo presenta reclamaciones según las reglas y rastrea las discrepancias más complejas en tu nombre. Incluso logramos que un promedio del 63% de las reclamaciones previamente fallidas sean aprobadas y reembolsadas por Amazon.",
+      number: "02",
+      title: "Máxima Rentabilidad de tu Inversión",
+      description: "Invertir en Amazon Ads es fundamental para posicionar tu marca. Nos enfocamos en rentabilizar al máximo cada euro invertido, transformando tu presupuesto publicitario en un verdadero motor de crecimiento y visibilidad.",
     },
     {
-      topTitle: "MÁS",
-      mainTitle: "FLEXIBILIDAD",
-      topTitleColor: "text-[#8A63D2]",
-      description: "Conoce tu nuevo truco para ahorrar tiempo: nos encargamos del proceso de recuperación de reclamaciones para que tu negocio pueda canalizar su potencial y energía donde más se necesita.",
+      number: "03",
+      title: "Expansión a Mercados Internacionales",
+      description: "¿Listo para vender a nivel global? Eliminamos las barreras de la internacionalización. Nos encargamos de todo el proceso de apertura y configuración de tus cuentas en los nuevos mercados de Amazon para que tu marca alcance una audiencia mundial.",
     },
     {
-      topTitle: "MÁS",
-      mainTitle: "DINERO",
-      topTitleColor: "text-[#77AADD]",
-      description: "Es simple: buscamos más y encontramos más para que recuperes más, más a menudo. Aseguramos un promedio del 90% de las reclamaciones que abrimos.",
+      number: "04",
+      title: "Gestión de Cuentas y Campañas Globales",
+      description: "Una vez en nuevos mercados, gestionamos tus productos y campañas publicitarias internacionales. Nos aseguramos de que tu estrategia esté localizada y optimizada para seguir aumentando tus ventas y beneficios a escala global.",
     },
   ];
 
   return (
-    <section className="bg-[#2B2925] text-white py-20">
+    <section id="servicios" className="bg-[#2B2925] text-white py-20">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">
-            <h2 className="font-dm-sans-black text-5xl md:text-7xl leading-none tracking-tighter">
-              Obtén más de lo que{' '}
+            <p className="font-dm-mono text-lg text-[#14F1D9] font-bold tracking-widest">SERVICIOS</p>
+            <h2 className="font-dm-sans-black text-5xl md:text-6xl leading-none tracking-tighter mt-4">
+              Lleva tus Ventas en Amazon al{' '}
               <span className="relative inline-block">
-                importa
+                Siguiente
                 <span className="absolute left-0 -right-2 bottom-0 h-4 md:h-6 bg-[#8A63D2]/80 -z-10"></span>
               </span>{' '}
-              más
+              Nivel
             </h2>
           </div>
           <div>
             <p className="text-[#cbc8c5] text-lg md:text-xl">
-              Nuestro único enfoque son los reembolsos de Amazon FBA, y ayudar a los vendedores individuales y a las marcas de consumo a desbloquear un flujo de ingresos continuo. Eso es combustible para reinvertir en tu negocio. Es libertad para planificar tu futuro. Con Iceberg365, obtienes más.
+              En Iceberg365, somos expertos en potenciar tu marca en Amazon. Desde la optimización de tu inversión publicitaria para mejorar tu ACOS hasta la expansión internacional de tu negocio, te ofrecemos las estrategias y la gestión que necesitas para crecer.
             </p>
             <div className="mt-8 flex justify-center lg:justify-start">
               <a href="#" className="group bg-white text-[#2B2925] text-base font-bold py-4 px-8 rounded-full hover:bg-transparent hover:text-white border-2 border-white transition-colors flex items-center">
-                Aprende Más <ArrowIcon />
+                Solicita tu Propuesta <ArrowIcon />
               </a>
             </div>
           </div>
         </div>
 
         <div className="mt-20 grid md:grid-cols-2 gap-8">
-          {features.map((feature, index) => (
+          {features.map((feature) => (
             <FeatureCard 
-                key={index} 
-                topTitle={feature.topTitle} 
-                topTitleColor={feature.topTitleColor} 
-                mainTitle={feature.mainTitle} 
+                key={feature.number} 
+                number={feature.number}
+                title={feature.title} 
                 description={feature.description} />
           ))}
         </div>

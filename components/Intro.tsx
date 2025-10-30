@@ -7,8 +7,8 @@ const Intro: React.FC = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="flex justify-center">
             <img 
-              src="https://picsum.photos/seed/warehouse/700/450" 
-              alt="Amazon warehouse aisle" 
+              src="https://images.unsplash.com/photo-1586528116311-08dd6e784b78?w=700&h=450&fit=crop" 
+              alt="Almacén con cajas de inventario" 
               className="rounded-2xl shadow-xl object-cover"
             />
           </div>
