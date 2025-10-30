@@ -9,24 +9,24 @@ const StarIcon: React.FC<{ className?: string }> = ({ className }) => (
 
 const Testimonials: React.FC = () => {
     return (
-        <section id="testimonios" className="bg-[#F4EDE5] py-20">
+        <section id="testimonios" className="bg-white py-20">
             <div className="container mx-auto px-6 text-center">
-                <h2 className="font-dm-sans-black text-4xl md:text-5xl">Lo que dicen nuestros clientes</h2>
-                <p className="mt-4 text-lg md:text-xl text-[#62605C] max-w-2xl mx-auto">Nuestros clientes adoran cómo simplificamos sus procesos y agilizamos sus operaciones.</p>
+                <h2 className="font-dm-sans-black text-4xl md:text-5xl text-[#2C2C2C]">Lo que dicen nuestros clientes</h2>
+                <p className="mt-4 text-lg md:text-xl text-[#2C2C2C]/70 max-w-2xl mx-auto">Por qué nuestros clientes confían en nosotros.</p>
 
                 <div className="max-w-3xl mx-auto mt-12">
-                    <div className="bg-[#2B2925] text-white p-10 rounded-2xl shadow-xl">
-                        <p className="text-2xl md:text-3xl font-medium text-[#cbc8c5] leading-snug">
-                            "Aumentamos en 1 año un 200% el volumen de ventas.”
+                    <div className="bg-gradient-to-br from-[#17EBEB]/10 to-[#17EBEB]/5 text-[#2C2C2C] p-10 rounded-2xl shadow-xl border border-[#17EBEB]/20">
+                        <p className="text-2xl md:text-3xl font-medium text-[#2C2C2C] leading-snug">
+                            "En un año multiplicamos las ventas por 3. No podemos estar más contentos."
                         </p>
                         <div className="mt-8 text-left">
                             <div className="flex">
                                 {[...Array(5)].map((_, i) => (
-                                    <StarIcon key={i} className="text-[#DD8B26]" />
+                                    <StarIcon key={i} className="text-[#FF7A00]" />
                                 ))}
                             </div>
-                            <p className="font-dm-mono text-xl mt-4">Cliente real (ejemplo)</p>
-                            <p className="text-md text-[#cbc8c5]">Manager en Ejemplo S.L.</p>
+                            <p className="font-dm-mono text-xl mt-4 text-[#2C2C2C]">Cliente real</p>
+                            <p className="text-md text-[#2C2C2C]/70">Manager en Ejemplo S.L.</p>
                         </div>
                     </div>
                 </div>

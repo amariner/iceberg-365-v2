@@ -56,7 +56,7 @@ const FAQ: React.FC = () => {
   return (
     <section className="bg-[#F4EDE5] py-20">
       <div className="container mx-auto px-6 text-center">
-        <h2 className="font-dm-sans-black text-5xl md:text-6xl text-[#2B2925]">PREGUNTAS FRECUENTES (FAQs)</h2>
+        <h2 className="font-dm-sans-black text-5xl md:text-6xl text-[#2B2925]">Preguntas frecuentes</h2>
         <p className="mt-4 text-lg md:text-xl text-[#62605C]">A continuación se presentan algunas preguntas frecuentes sobre este tema.</p>
         <div className="max-w-4xl mx-auto mt-12 text-left rounded-lg overflow-hidden">
           {faqs.map((faq, index) => (

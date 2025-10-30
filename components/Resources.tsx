@@ -24,7 +24,7 @@ const ResourceCard: React.FC<ResourceCardProps> = ({ category, imageUrl, title, 
             <h3 className="font-dm-sans-black text-2xl text-white mb-4">{title}</h3>
             <p className="text-[#cbc8c5] text-lg mb-6 flex-grow">{description}</p>
             <a href={href} className="font-bold text-[#DD8B26] hover:text-white transition-colors group-hover:text-white">
-                Continuar Leyendo <span className="transition-transform group-hover:translate-x-1 inline-block">→</span>
+                Continuar leyendo <span className="transition-transform group-hover:translate-x-1 inline-block">→</span>
             </a>
         </div>
     </div>
@@ -59,22 +59,22 @@ const Resources: React.FC = () => {
     return (
         <section className="bg-[#2B2925] py-20">
             <div className="container mx-auto px-6">
-                <p className="font-dm-mono text-[#DD8B26] font-bold tracking-widest text-center lg:text-left">RECURSOS</p>
+                <p className="font-dm-mono text-[#DD8B26] font-bold tracking-widest text-center lg:text-left">Recursos</p>
                 <div className="grid lg:grid-cols-2 gap-8 items-center mt-4">
                     <div className="text-center lg:text-left">
                         <h2 className="font-dm-sans-black text-5xl md:text-6xl text-white leading-tight">
-                        El Conocimiento {' '}
+                        El conocimiento {' '}
                         <span className="relative inline-block">
-                            Enciende
+                            enciende
                             <span className="absolute -left-2 -right-2 -bottom-1 h-4 md:h-5 bg-[#8A63D2]/80 -z-10"></span>
                         </span>
-                        {' '}Nuevas Oportunidades
+                        {' '}nuevas oportunidades
                         </h2>
                     </div>
                     <div className="text-center lg:text-left">
                         <p className="text-[#cbc8c5] text-lg md:text-xl">Nos encanta aprender: sobre ti, contigo, para ti. Iceberg365 crea y selecciona los recursos que pueden ayudar a transformar la forma en que haces negocios, para que puedas lograr más.</p>
                         <div className="mt-8 flex justify-center lg:justify-start">
-                             <a href="#" className="bg-[#F4EDE5] text-[#2B2925] text-base font-bold py-4 px-8 rounded-full hover:opacity-90 transition-opacity">Explora Más</a>
+                             <a href="#" className="bg-[#F4EDE5] text-[#2B2925] text-base font-bold py-4 px-8 rounded-full hover:opacity-90 transition-opacity">Explora más</a>
                         </div>
                     </div>
                 </div>

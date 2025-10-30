@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 
 const App: React.FC = () => {
   return (
-    <div className="bg-[#F4EDE5] text-[#2B2925]">
+    <div className="bg-white text-[#2C2C2C]">
       <Header />
       <main>
         <Hero />
