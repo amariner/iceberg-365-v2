@@ -48,21 +48,21 @@ const Hero: React.FC = () => {
                 Casos y recursos <ArrowIcon />
               </a>
             </div>
-            <div className="mt-12 grid sm:grid-cols-2 gap-6">
+            <div className="mt-12 grid sm:grid-cols-2 gap-4 text-sm">
               {stats.map((stat) => (
                 <div
                   key={stat.label}
-                  className="bg-white border border-[#e6e3dd] rounded-2xl px-6 py-5 shadow-[0_15px_60px_rgba(17,17,17,0.05)]"
+                  className="bg-white border border-[#e6e3dd] rounded-2xl px-4 py-3 shadow-[0_15px_60px_rgba(17,17,17,0.05)]"
                 >
-                  <p className="text-sm tracking-[0.3em] uppercase text-[#969186]">{stat.label}</p>
-                  <p className="text-3xl font-dm-sans-black text-[#131313] mt-3">{stat.value}</p>
-                  <p className="text-sm text-[#4d4d4d] mt-1">{stat.detail}</p>
+                  <p className="text-[10px] tracking-[0.3em] uppercase text-[#969186]">{stat.label}</p>
+                  <p className="text-xl font-dm-sans-black text-[#131313] leading-tight mt-1">{stat.value}</p>
+                  <p className="text-[11px] text-[#4d4d4d] leading-tight mt-1">{stat.detail}</p>
                 </div>
               ))}
             </div>
           </div>
           <div className="order-1 lg:order-2">
-            <div className="relative h-[70vh] lg:h-screen rounded-[32px] overflow-hidden border border-[#e7e1d8] shadow-[0_25px_80px_rgba(17,17,17,0.08)] bg-white">
+            <div className="relative h-[70vh] lg:h-[calc(100vh-176px)] rounded-[32px] overflow-hidden border border-[#e7e1d8] shadow-[0_25px_80px_rgba(17,17,17,0.08)] bg-white">
               <img
                 src="/images/hero-warehouse.png"
                 alt="Especialista gestionando logística en almacén"
