@@ -1,21 +1,22 @@
 
 import React from 'react';
 
-const ClientLogos: React.FC = () => {
-  const logos = [
-    { name: "Bulletproof", src: "https://getida.com/wp-content/uploads/2023/08/Bulletproof-client-logo.svg", height: "h-10" },
-    { name: "Claire's", src: "https://getida.com/wp-content/uploads/2023/08/Claires-client-logo.svg", height: "h-8" },
-    { name: "Leatherman", src: "https://getida.com/wp-content/uploads/2023/08/Leatherman-client-logo.svg", height: "h-6" },
-    { name: "Nutrafol", src: "https://getida.com/wp-content/uploads/2023/08/Nutrafol-client-logo.svg", height: "h-6" },
-    { name: "Zumba", src: "https://getida.com/wp-content/uploads/2023/08/Zumba-client-logo.svg", height: "h-8" },
-  ];
+const logos = [
+  { name: 'Caudalie', src: 'https://upload.wikimedia.org/wikipedia/commons/a/a9/Caudalie_logo.svg' },
+  { name: 'Loewe', src: 'https://upload.wikimedia.org/wikipedia/commons/9/94/Loewe_logo.svg' },
+  { name: 'Tous', src: 'https://upload.wikimedia.org/wikipedia/commons/f/ff/TOUS_logo.svg' },
+  { name: 'Casall', src: 'https://upload.wikimedia.org/wikipedia/commons/b/b9/Casall_logo.svg' },
+  { name: 'Bimba y Lola', src: 'https://upload.wikimedia.org/wikipedia/commons/7/79/Bimba_y_Lola_logo.svg' },
+];
 
+const ClientLogos: React.FC = () => {
   return (
-    <div className="bg-[#8A63D2] py-8 overflow-hidden">
+    <div className="bg-white border-y border-[#e6e3dd] py-8">
       <div className="container mx-auto px-6">
-        <div className="flex justify-around items-center space-x-8 md:space-x-12 animate-marquee whitespace-nowrap">
-          {logos.concat(logos).map((logo, index) => (
-            <img key={index} src={logo.src} alt={logo.name} className={`${logo.height} opacity-80 hover:opacity-100 transition-opacity`} />
+        <p className="text-xs tracking-[0.4em] uppercase text-center text-[#969186] mb-6">Marcas que confían en nosotros</p>
+        <div className="flex flex-wrap justify-center items-center gap-8 opacity-70">
+          {logos.map((logo) => (
+            <img key={logo.name} src={logo.src} alt={logo.name} className="h-6 object-contain grayscale" />
           ))}
         </div>
       </div>

@@ -6,8 +6,8 @@ const Header: React.FC = () => {
 
   const navLinks = [
     { name: 'Servicios', href: '#servicios' },
-    { name: 'Objetivos', href: '#objetivos' },
-    { name: 'Testimonios', href: '#testimonios' },
+    { name: 'Expertise', href: '#expertise' },
+    { name: 'Recursos', href: '#recursos' },
   ];
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -35,7 +35,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-lg border-b border-[#E6E6E6]">
+    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-2xl border-b border-[#e6e3dd]">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <div className="flex items-center">
             <img src="https://iceberg365.com/img/logo.png" alt="Iceberg365 Logo" className="h-8" />
@@ -47,7 +47,7 @@ const Header: React.FC = () => {
               key={link.name} 
               href={link.href} 
               onClick={(e) => handleClick(e, link.href)}
-              className="text-sm font-medium text-[#2C2C2C] hover:text-[#17EBEB] transition-colors cursor-pointer"
+              className="text-sm font-medium text-[#2C2C2C] hover:text-[#111] transition-colors cursor-pointer"
             >
               {link.name}
             </a>
@@ -55,8 +55,8 @@ const Header: React.FC = () => {
         </nav>
 
         <div className="hidden lg:flex items-center">
-          <a href="#" className="bg-[#FF7A00] text-white text-sm font-bold py-3 px-6 rounded-full hover:opacity-90 transition-opacity">
-            Contacto
+          <a href="#contacto" className="bg-[#ebf213] text-[#111] text-sm font-semibold py-3 px-6 rounded-full shadow-[0_10px_35px_rgba(0,0,0,0.08)] hover:-translate-y-0.5 transition-transform">
+            Hablemos
           </a>
         </div>
 
