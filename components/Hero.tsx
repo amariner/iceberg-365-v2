@@ -2,35 +2,92 @@
 import React from 'react';
 
 const ArrowIcon: React.FC = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 24 20" fill="none" className="inline-block ml-2 group-hover:fill-white fill-[#FF7A00] transition-colors">
-      <path d="M23.7067 10.7075L14.707 19.7072C14.5194 19.8948 14.2649 20.0002 13.9995 20.0002C13.7342 20.0002 13.4797 19.8948 13.2921 19.7072C13.1044 19.5195 12.999 19.2651 12.999 18.9997C12.999 18.7344 13.1044 18.4799 13.2921 18.2922L20.5856 11H0.999967C0.734759 11 0.480414 10.8946 0.292884 10.7071C0.105354 10.5196 0 10.2652 0 10C0 9.73479 0.105354 9.48045 0.292884 9.29292C0.480414 9.10539 0.734759 9.00003 0.999967 9.00003H20.5856L13.2921 1.70777C13.1044 1.52014 12.999 1.26565 12.999 1.00029C12.999 0.734939 13.1044 0.480452 13.2921 0.292818C13.4797 0.105183 13.7342 -0.000228882 13.9995 -0.000228882C14.2649 -0.000228882 14.5194 0.105183 14.707 0.292818L23.7067 9.29252C23.7997 9.38539 23.8735 9.49568 23.9238 9.61707C23.9741 9.73847 24 9.86859 24 10C24 10.1314 23.9741 10.2615 23.9238 10.3829C23.8735 10.5043 23.7997 10.6146 23.7067 10.7075Z" fill="currentColor"></path>
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="ml-3">
+    <path
+      d="M5 12H19M19 12L12 5M19 12L12 19"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
   </svg>
 );
 
 const Hero: React.FC = () => {
+  const stats = [
+    { label: 'Marketplace gestionados', value: '+12', detail: 'Amazon, Fnac, ECI y más' },
+    { label: 'Crecimiento medio', value: '2.3x', detail: 'en los primeros 6 meses' },
+  ];
+
   return (
-    <section className="bg-white min-h-screen flex items-center pt-16 pb-20">
-      <div className="container mx-auto px-6 w-full">
+    <section className="relative overflow-hidden bg-[#f7f5f1]">
+      <div className="absolute inset-x-0 top-[-200px] sm:top-[-300px] mx-auto h-[480px] w-[480px] sm:h-[640px] sm:w-[640px] rounded-full bg-[#f5f0e4] blur-[160px] opacity-70 pointer-events-none" />
+      <div className="container mx-auto px-6 pt-24 pb-20 relative">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="text-center lg:text-left">
-            <h1 className="font-dm-sans-black text-5xl md:text-6xl lg:text-7xl leading-none text-[#2C2C2C] tracking-tighter">
-              Concéntrate en tu{' '}
-              <span className="relative inline-block">
-                negocio
-                <span className="absolute left-0 right-0 bottom-1 h-3 md:h-5 bg-[#17EBEB]/30 -z-10"></span>
-              </span>
+          <div className="order-2 lg:order-1">
+            <span className="inline-flex items-center gap-2 text-xs tracking-[0.4em] uppercase font-semibold text-[#5e5c58] bg-white/70 border border-[#e6e3dd] rounded-full px-4 py-2">
+              Consultoría Amazon & Retail Media
+            </span>
+            <h1 className="font-dm-sans-black text-4xl md:text-5xl lg:text-[56px] leading-tight text-[#131313] mt-6 tracking-tight">
+              Expertos en hacer crecer tu negocio en Amazon y marketplaces, sin perder tu esencia.
             </h1>
-            <p className="mt-8 text-lg md:text-xl max-w-xl mx-auto lg:mx-0 text-[#2C2C2C]/70">
-              Diseñamos tu estrategia en Amazon y otros marketplaces para que vendas más.
+            <p className="text-lg md:text-xl text-[#4d4d4d] mt-6 max-w-xl">
+              Nos ocupamos de la estrategia, la operativa y la medición para que te centres en lo importante: tu producto y tus clientes.
             </p>
-            <div className="mt-10">
-              <a href="#servicios" className="group bg-transparent border-2 border-[#FF7A00] text-[#2C2C2C] text-base font-bold py-4 px-8 rounded-full hover:bg-[#FF7A00] hover:text-white transition-colors flex items-center justify-center max-w-sm mx-auto lg:mx-0">
-                Descubre nuestros servicios <ArrowIcon />
+            <div className="mt-8 flex flex-wrap gap-4">
+              <a
+                href="#servicios"
+                className="bg-[#ebf213] text-[#131313] px-6 py-4 rounded-full font-semibold shadow-[0_15px_45px_rgba(0,0,0,0.12)] hover:-translate-y-0.5 transition-transform"
+              >
+                Ver servicios
+              </a>
+              <a
+                href="#recursos"
+                className="flex items-center text-[#131313] font-semibold hover:gap-3 transition-all gap-2"
+              >
+                Casos y recursos <ArrowIcon />
               </a>
             </div>
+            <div className="mt-12 grid sm:grid-cols-2 gap-6">
+              {stats.map((stat) => (
+                <div
+                  key={stat.label}
+                  className="bg-white border border-[#e6e3dd] rounded-2xl px-6 py-5 shadow-[0_15px_60px_rgba(17,17,17,0.05)]"
+                >
+                  <p className="text-sm tracking-[0.3em] uppercase text-[#969186]">{stat.label}</p>
+                  <p className="text-3xl font-dm-sans-black text-[#131313] mt-3">{stat.value}</p>
+                  <p className="text-sm text-[#4d4d4d] mt-1">{stat.detail}</p>
+                </div>
+              ))}
+            </div>
           </div>
-          <div className="relative">
-             <img src="https://iceberg-25-v1.netlify.app/_next/image?url=%2Fbost-amazon.jpg&w=640&q=75" alt="Vendedora de Amazon trabajando en su laptop" className="rounded-2xl shadow-2xl w-full" />
+          <div className="order-1 lg:order-2">
+            <div className="relative h-[70vh] lg:h-screen rounded-[32px] overflow-hidden border border-[#e7e1d8] shadow-[0_25px_80px_rgba(17,17,17,0.08)] bg-white">
+              <img
+                src="/images/hero-warehouse.png"
+                alt="Especialista gestionando logística en almacén"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-xl rounded-2xl border border-[#ebe7de] p-4 shadow-lg">
+                <p className="text-sm text-[#4d4d4d]">Acompañamos a equipos de marketing y eCommerce que necesitan resultados visibles.</p>
+                <div className="flex items-center gap-4 mt-4">
+                  <div className="flex -space-x-2">
+                    {[1, 2, 3].map((item) => (
+                      <img
+                        key={item}
+                        src={`https://i.pravatar.cc/56?img=${item + 30}`}
+                        alt="Cliente"
+                        className="w-10 h-10 rounded-full border-2 border-white"
+                      />
+                    ))}
+                  </div>
+                  <div>
+                    <p className="text-xs uppercase tracking-[0.3em] text-[#969186]">Clientes activos</p>
+                    <p className="text-sm font-semibold text-[#131313]">+35 marcas acompañadas</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

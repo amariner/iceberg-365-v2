@@ -1,41 +1,42 @@
-
-import React, { useState } from 'react';
+import React from 'react';
 
 const Footer: React.FC = () => {
-    const [logoError, setLogoError] = useState(false);
-    
-    return (
-        <footer className="bg-white text-[#2C2C2C] pt-12 pb-8">
-            <div className="container mx-auto px-6">
-                <div className="text-center">
-                    <img src="https://iceberg365.com/img/logo.png" alt="Iceberg365 Logo" className="h-8 mx-auto mb-4" />
-                    <p className="text-lg text-[#2C2C2C]/70 mb-8">Diseñado para hacer crecer tu negocio.</p>
-                </div>
-
-                <div className="border-t border-[#2C2C2C]/20 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-[#2C2C2C]/70">
-                    <div className="order-2 md:order-1 mt-4 md:mt-0 flex items-center gap-4 flex-wrap justify-center md:justify-start">
-                        <p>© 2025 Iceberg.</p>
-                        <div className="inline-flex items-center gap-2 bg-[#FFD814]/20 px-3 py-1.5 rounded-full border border-[#FFD814]/30">
-                            {!logoError && (
-                                <img 
-                                    src="https://images-na.ssl-images-amazon.com/images/G/01/ads/partners/partner-badge.svg" 
-                                    alt="Amazon Ads Partner" 
-                                    className="h-4"
-                                    onError={() => setLogoError(true)}
-                                />
-                            )}
-                            <span className="text-[#2C2C2C] font-bold text-xs">Official Partner Amazon Ads</span>
-                        </div>
-                    </div>
-                    <div className="flex flex-wrap gap-x-6 gap-y-2 justify-center order-1 md:order-2">
-                        <a href="#" className="hover:text-[#FF7A00] transition-colors">Aviso legal</a>
-                        <a href="#" className="hover:text-[#FF7A00] transition-colors">Cookies</a>
-                        <a href="#" className="hover:text-[#FF7A00] transition-colors">Contacto</a>
-                    </div>
-                </div>
+  return (
+    <footer className="bg-[#0d0d0d] text-white pt-20 pb-10">
+      <div className="container mx-auto px-6">
+        <div className="grid lg:grid-cols-[1.2fr_0.8fr] gap-12">
+          <div>
+            <img src="https://iceberg365.com/img/logo.png" alt="Iceberg365 Logo" className="h-8 mb-6" />
+            <p className="text-lg text-white/70 max-w-lg">
+              Consultoría para marcas que quieren vender más y mejor en marketplaces sin improvisar.
+            </p>
+          </div>
+          <div className="flex flex-col sm:flex-row sm:justify-end gap-6 text-sm">
+            <div className="space-y-2">
+              <p className="text-xs uppercase tracking-[0.3em] text-white/50">Enlaces</p>
+              <a href="#servicios" className="hover:text-white/60">Servicios</a>
+              <a href="#expertise" className="hover:text-white/60">Expertise</a>
+              <a href="#recursos" className="hover:text-white/60">Recursos</a>
             </div>
-        </footer>
-    );
+            <div className="space-y-2">
+              <p className="text-xs uppercase tracking-[0.3em] text-white/50">Legal</p>
+              <a href="#" className="hover:text-white/60">Aviso legal</a>
+              <a href="#" className="hover:text-white/60">Cookies</a>
+            </div>
+            <div className="space-y-2">
+              <p className="text-xs uppercase tracking-[0.3em] text-white/50">Contacto</p>
+              <a href="mailto:hola@iceberg365.com" className="hover:text-white/60">hola@iceberg365.com</a>
+              <a href="#contacto" className="hover:text-white/60">Agenda una sesión</a>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-12 border-t border-white/10 pt-8 flex flex-col md:flex-row md:items-center justify-between gap-6">
+          <p className="text-sm text-white/50">© {new Date().getFullYear()} Iceberg365. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;
