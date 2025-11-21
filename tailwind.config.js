@@ -11,7 +11,8 @@ export default {
             colors: {
                 iceberg: {
                     bg: '#FDFBF7',
-                    yellow: '#ebf213',
+                    primary: '#FF7A00', // Naranja más suave (Pastel/Coral)
+                    secondary: '#0A192F',
                     text: '#111827',
                 }
             },

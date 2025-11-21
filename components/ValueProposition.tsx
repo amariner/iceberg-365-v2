@@ -60,7 +60,7 @@ const ValueProposition: React.FC = () => {
               key={service.title}
               className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 group cursor-default"
             >
-              <div className="w-12 h-12 bg-gray-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-iceberg-yellow transition-colors duration-300">
+              <div className="w-12 h-12 bg-gray-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-iceberg-primary transition-colors duration-300">
                 {service.icon}
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">{service.title}</h3>

@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
               Consultoría Amazon & Retail Media
             </span>
             <h1 className="font-dm-sans font-bold text-3xl md:text-5xl lg:text-[64px] leading-[1.1] text-gray-900 mt-6 md:mt-8 tracking-tight">
-              Escalamos marcas en Amazon y Marketplaces con estrategia y datos.
+              Aumenta tus ventas en Amazon y Marketplaces con una estrategia basada en datos reales.
             </h1>
             <p className="text-lg md:text-xl text-gray-600 mt-6 max-w-xl leading-relaxed">
               Nos ocupamos de la estrategia, la operativa y la medición para que te centres en lo importante: tu producto y tus clientes.
@@ -32,9 +32,9 @@ const Hero: React.FC = () => {
             <div className="mt-8 flex flex-wrap gap-4">
               <a
                 href="#servicios"
-                className="bg-iceberg-yellow text-gray-900 px-8 py-4 rounded-2xl font-semibold shadow-lg shadow-iceberg-yellow/20 hover:-translate-y-1 transition-all duration-300"
+                className="bg-iceberg-primary text-white px-8 py-4 rounded-2xl font-bold shadow-lg shadow-iceberg-primary/30 hover:-translate-y-1 transition-all duration-300"
               >
-                Ver servicios
+                Solicitar auditoría
               </a>
               <a
                 href="#recursos"

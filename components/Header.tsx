@@ -55,7 +55,7 @@ const Header: React.FC = () => {
         </nav>
 
         <div className="hidden lg:flex items-center">
-          <a href="#contacto" className="bg-transparent border-2 border-iceberg-yellow text-gray-900 text-sm font-semibold py-2.5 px-5 rounded-xl shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+          <a href="#contacto" className="bg-iceberg-primary text-white text-sm font-bold py-2.5 px-5 rounded-xl shadow-lg shadow-iceberg-primary/20 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300">
             Hablemos
           </a>
         </div>
@@ -77,12 +77,12 @@ const Header: React.FC = () => {
               key={link.name}
               href={link.href}
               onClick={(e) => handleClick(e, link.href)}
-              className="text-lg font-medium text-gray-900 hover:text-iceberg-yellow transition-colors cursor-pointer"
+              className="text-lg font-medium text-gray-900 hover:text-iceberg-primary transition-colors cursor-pointer"
             >
               {link.name}
             </a>
           ))}
-          <a href="#contacto" className="bg-iceberg-yellow text-gray-900 text-lg font-bold py-3 px-6 rounded-xl hover:opacity-90 transition-opacity text-center mt-4 shadow-md">
+          <a href="#contacto" className="bg-iceberg-primary text-white text-lg font-bold py-3 px-6 rounded-xl hover:opacity-90 transition-opacity text-center mt-4 shadow-md">
             Contacto
           </a>
         </nav>

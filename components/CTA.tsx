@@ -9,7 +9,7 @@ const CTA: React.FC = () => {
           <div>
             <p className="text-xs tracking-widest uppercase font-semibold text-gray-500">Próximo paso</p>
             <h2 className="font-dm-sans-black text-3xl md:text-[42px] text-gray-900 leading-[1.1] mt-3">
-              Agendemos una sesión para entender tus objetivos y priorizar juntos.
+              Deja de perder margen y empieza a escalar hoy.
             </h2>
             <p className="text-lg text-gray-600 mt-4 leading-relaxed">
               45 minutos para revisar tu situación, identificar quick wins y definir cómo puede ayudarte Iceberg365.
@@ -17,9 +17,9 @@ const CTA: React.FC = () => {
             <div className="mt-8 flex flex-wrap gap-4">
               <a
                 href="mailto:hola@iceberg365.com"
-                className="bg-gray-900 text-white px-8 py-4 rounded-2xl font-semibold hover:-translate-y-1 transition-all duration-300 shadow-lg shadow-gray-900/20"
+                className="bg-iceberg-primary text-white px-8 py-4 rounded-2xl font-bold hover:-translate-y-1 transition-all duration-300 shadow-lg shadow-iceberg-primary/30"
               >
-                Reservar llamada
+                Quiero escalar mi marca
               </a>
               <a
                 href="#recursos"
