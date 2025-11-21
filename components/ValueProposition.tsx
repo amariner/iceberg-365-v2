@@ -1,79 +1,70 @@
-
 import React from 'react';
 
 const services = [
   {
     title: 'Optimización de ACOS',
     description: 'Ajustamos pujas, audiencias y creatividades para dominar Retail Media sin perder rentabilidad.',
-    color: 'from-[#fef6d4] to-[#fff8e8]',
+    icon: (
+      <svg className="w-6 h-6 text-gray-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+      </svg>
+    ),
   },
   {
     title: 'Estrategia internacional',
     description: 'Abrimos y pulimos tus listings para escalar a nuevos países con la misma consistencia de marca.',
-    color: 'from-[#f0f5ff] to-[#f7faff]',
+    icon: (
+      <svg className="w-6 h-6 text-gray-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+    ),
   },
   {
     title: 'Operativa y catálogo',
     description: 'Nos ocupamos del stock, compliance y contenidos para que cada lanzamiento sea impecable.',
-    color: 'from-[#fef0fb] to-[#fff5fb]',
+    icon: (
+      <svg className="w-6 h-6 text-gray-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+      </svg>
+    ),
   },
   {
     title: 'Marketing 360º',
     description: 'Integramos la estrategia de marketplaces con tu eCommerce, CRM y paid media.',
-    color: 'from-[#edf8f2] to-[#f4fbf7]',
+    icon: (
+      <svg className="w-6 h-6 text-gray-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z" />
+      </svg>
+    ),
   },
 ];
 
 const ValueProposition: React.FC = () => {
   return (
-    <section id="servicios" className="bg-[#f7f5f1] pt-16 pb-12">
+    <section id="servicios" className="bg-[#FDFBF7] py-24">
       <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-[1.2fr_1fr] gap-10 items-start">
-          <div className="bg-white rounded-[32px] p-10 border border-[#e6e3dd] shadow-[0_25px_80px_rgba(17,17,17,0.06)]">
-            <p className="text-xs tracking-[0.4em] uppercase font-semibold text-[#7a7772]">Servicios</p>
-            <h2 className="font-dm-sans-black text-3xl md:text-[40px] text-[#131313] mt-4 leading-tight">
-              Diseñamos un plan integral para que tus ventas online crezcan de forma sostenible.
-            </h2>
-            <p className="text-lg text-[#4d4d4d] mt-4">
-              Diagnosticamos, priorizamos y ejecutamos junto a tu equipo. Cada sprint se acompaña de métricas claras para que sepas qué decisión impactó en tus resultados.
-            </p>
-            <div className="mt-8 flex flex-wrap gap-4">
-              <div className="flex-1 min-w-[220px] bg-[#fef6d4] border border-[#f5e7aa] rounded-2xl p-5">
-                <p className="text-sm text-[#7a6d32] uppercase tracking-[0.2em]">Resultado medio</p>
-                <p className="text-3xl font-dm-sans-black text-[#131313] mt-2">+42%</p>
-                <p className="text-sm text-[#5a564d]">en ROAS en 3 meses</p>
-              </div>
-              <div className="flex-1 min-w-[220px] bg-[#f0f5ff] border border-[#d7e3ff] rounded-2xl p-5">
-                <p className="text-sm text-[#4a5a7b] uppercase tracking-[0.2em]">Equipo senior</p>
-                <p className="text-3xl font-dm-sans-black text-[#131313] mt-2">+15</p>
-                <p className="text-sm text-[#4a4a4a]">consultores especializados</p>
-              </div>
-            </div>
-          </div>
-          <div className="rounded-[32px] overflow-hidden border border-[#e6e3dd]">
-            <img
-              src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=1200"
-              alt="Equipo de estrategia digital"
-              className="w-full h-full object-cover"
-            />
-          </div>
+        <div className="max-w-3xl mx-auto text-center mb-20">
+          <span className="text-xs font-semibold tracking-widest text-gray-500 uppercase mb-4 block">Nuestros Servicios</span>
+          <h2 className="font-dm-sans-black text-3xl md:text-4xl lg:text-5xl text-gray-900 leading-tight mb-6">
+            Todo lo que necesitas para vender más en marketplaces
+          </h2>
+          <p className="text-lg text-gray-600 leading-relaxed">
+            Diagnosticamos, priorizamos y ejecutamos. Sin humo, solo resultados medibles.
+          </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 mt-10">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service) => (
             <div
               key={service.title}
-              className={`bg-gradient-to-b ${service.color} border border-[#ebe7de] rounded-[28px] p-8 flex flex-col min-h-[220px]`}
+              className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group"
             >
-              <p className="text-sm uppercase tracking-[0.3em] text-[#969186]">Servicio</p>
-              <h3 className="text-2xl font-dm-sans-black text-[#131313] mt-3">{service.title}</h3>
-              <p className="text-[#4d4d4d] mt-3 flex-grow">{service.description}</p>
-              <span className="mt-6 inline-flex items-center text-sm font-semibold text-[#131313]">
-                Saber más
-                <svg className="ml-2" width="16" height="16" viewBox="0 0 24 24" fill="none">
-                  <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </span>
+              <div className="w-12 h-12 bg-gray-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#ebf213] transition-colors duration-300">
+                {service.icon}
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">{service.title}</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">{service.description}</p>
             </div>
           ))}
         </div>

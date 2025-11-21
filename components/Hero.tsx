@@ -14,55 +14,38 @@ const ArrowIcon: React.FC = () => (
 );
 
 const Hero: React.FC = () => {
-  const stats = [
-    { label: 'Marketplace gestionados', value: '+12', detail: 'Amazon, Fnac, ECI y más' },
-    { label: 'Crecimiento medio', value: '2.3x', detail: 'en los primeros 6 meses' },
-  ];
-
   return (
-    <section className="relative overflow-hidden bg-[#f7f5f1]">
+    <section className="relative overflow-hidden bg-[#FDFBF7] min-h-[calc(100vh-80px)] flex items-center">
       <div className="absolute inset-x-0 top-[-200px] sm:top-[-300px] mx-auto h-[480px] w-[480px] sm:h-[640px] sm:w-[640px] rounded-full bg-[#f5f0e4] blur-[160px] opacity-70 pointer-events-none" />
-      <div className="container mx-auto px-6 pt-24 pb-20 relative">
+      <div className="container mx-auto px-6 py-12 relative">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
-            <span className="inline-flex items-center gap-2 text-xs tracking-[0.4em] uppercase font-semibold text-[#5e5c58] bg-white/70 border border-[#e6e3dd] rounded-full px-4 py-2">
+            <span className="inline-flex items-center gap-2 text-xs tracking-wider uppercase font-semibold text-gray-500 bg-white/50 border border-gray-200 rounded-full px-3 py-1.5 backdrop-blur-sm">
               Consultoría Amazon & Retail Media
             </span>
-            <h1 className="font-dm-sans-black text-4xl md:text-5xl lg:text-[56px] leading-tight text-[#131313] mt-6 tracking-tight">
-              Expertos en hacer crecer tu negocio en Amazon y marketplaces, sin perder tu esencia.
+            <h1 className="font-dm-sans-black text-4xl md:text-5xl lg:text-[64px] leading-[1.1] text-gray-900 mt-8 tracking-tight">
+              Escalamos marcas en Amazon y Marketplaces con estrategia y datos.
             </h1>
-            <p className="text-lg md:text-xl text-[#4d4d4d] mt-6 max-w-xl">
+            <p className="text-lg md:text-xl text-gray-600 mt-6 max-w-xl leading-relaxed">
               Nos ocupamos de la estrategia, la operativa y la medición para que te centres en lo importante: tu producto y tus clientes.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <a
                 href="#servicios"
-                className="bg-[#ebf213] text-[#131313] px-6 py-4 rounded-full font-semibold shadow-[0_15px_45px_rgba(0,0,0,0.12)] hover:-translate-y-0.5 transition-transform"
+                className="bg-[#ebf213] text-gray-900 px-8 py-4 rounded-2xl font-semibold shadow-lg shadow-[#ebf213]/20 hover:-translate-y-1 transition-all duration-300"
               >
                 Ver servicios
               </a>
               <a
                 href="#recursos"
-                className="flex items-center text-[#131313] font-semibold hover:gap-3 transition-all gap-2"
+                className="flex items-center text-gray-900 font-semibold hover:gap-3 transition-all gap-2 px-4 py-2 rounded-xl hover:bg-white/50"
               >
                 Casos y recursos <ArrowIcon />
               </a>
             </div>
-            <div className="mt-12 grid sm:grid-cols-2 gap-4 text-sm">
-              {stats.map((stat) => (
-                <div
-                  key={stat.label}
-                  className="bg-white border border-[#e6e3dd] rounded-2xl px-4 py-3 shadow-[0_15px_60px_rgba(17,17,17,0.05)]"
-                >
-                  <p className="text-[10px] tracking-[0.3em] uppercase text-[#969186]">{stat.label}</p>
-                  <p className="text-xl font-dm-sans-black text-[#131313] leading-tight mt-1">{stat.value}</p>
-                  <p className="text-[11px] text-[#4d4d4d] leading-tight mt-1">{stat.detail}</p>
-                </div>
-              ))}
-            </div>
           </div>
-          <div className="order-1 lg:order-2">
-            <div className="relative h-[70vh] lg:h-[calc(100vh-176px)] rounded-[32px] overflow-hidden border border-[#e7e1d8] shadow-[0_25px_80px_rgba(17,17,17,0.08)] bg-white">
+          <div className="order-1 lg:order-2 flex justify-center">
+            <div className="relative w-full max-w-[600px] aspect-[4/5] lg:h-[calc(100vh-180px)] max-h-[700px] rounded-3xl overflow-hidden border border-gray-200 shadow-2xl shadow-gray-200/50 bg-white">
               <img
                 src="/images/hero-warehouse.png"
                 alt="Especialista gestionando logística en almacén"

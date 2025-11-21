@@ -38,12 +38,7 @@ const Resources: React.FC = () => {
               Compartimos lo que aprendemos con marcas como la tuya.
             </h2>
           </div>
-          <a
-            href="#contacto"
-            className="self-start bg-[#131313] text-white px-6 py-3 rounded-full font-semibold hover:-translate-y-0.5 transition-transform"
-          >
-            Ver todos
-          </a>
+
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">

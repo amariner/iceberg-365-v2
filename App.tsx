@@ -11,7 +11,7 @@ import Resources from './components/Resources';
 
 const App: React.FC = () => {
   return (
-    <div className="bg-[#f7f5f1] text-[#2C2C2C]">
+    <div className="bg-[#FDFBF7] text-[#111827]">
       <Header />
       <main>
         <Hero />

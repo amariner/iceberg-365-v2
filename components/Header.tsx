@@ -14,13 +14,13 @@ const Header: React.FC = () => {
     e.preventDefault();
     const targetId = href.substring(1);
     const element = document.getElementById(targetId);
-    
+
     if (element) {
       const headerOffset = 80;
       const elementPosition = element.getBoundingClientRect().top;
       const viewportHeight = window.innerHeight;
       const elementHeight = element.offsetHeight;
-      
+
       // Calcular la posición para centrar la sección verticalmente en el viewport
       const offsetPosition = elementPosition + window.pageYOffset - headerOffset - (viewportHeight / 2) + (elementHeight / 2);
 
@@ -29,25 +29,25 @@ const Header: React.FC = () => {
         behavior: 'smooth'
       });
     }
-    
+
     // Cerrar el menú móvil si está abierto
     setIsMenuOpen(false);
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-2xl border-b border-[#e6e3dd]">
+    <header className="sticky top-0 z-50 bg-[#FDFBF7]/80 backdrop-blur-xl border-b border-gray-100">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <div className="flex items-center">
-            <img src="https://iceberg365.com/img/logo.png" alt="Iceberg365 Logo" className="h-8" />
+          <img src="/images/logos/logo.png" alt="Iceberg365 Logo" className="h-8" />
         </div>
-        
+
         <nav className="hidden lg:flex items-center space-x-8">
           {navLinks.map((link) => (
-            <a 
-              key={link.name} 
-              href={link.href} 
+            <a
+              key={link.name}
+              href={link.href}
               onClick={(e) => handleClick(e, link.href)}
-              className="text-sm font-medium text-[#2C2C2C] hover:text-[#111] transition-colors cursor-pointer"
+              className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors cursor-pointer"
             >
               {link.name}
             </a>
@@ -55,7 +55,7 @@ const Header: React.FC = () => {
         </nav>
 
         <div className="hidden lg:flex items-center">
-          <a href="#contacto" className="bg-[#ebf213] text-[#111] text-sm font-semibold py-3 px-6 rounded-full shadow-[0_10px_35px_rgba(0,0,0,0.08)] hover:-translate-y-0.5 transition-transform">
+          <a href="#contacto" className="bg-transparent border-2 border-[#ebf213] text-gray-900 text-sm font-semibold py-2.5 px-5 rounded-xl shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
             Hablemos
           </a>
         </div>
@@ -71,12 +71,12 @@ const Header: React.FC = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="lg:hidden bg-white text-[#2C2C2C] absolute top-full left-0 w-full px-6 pb-6 border-b border-[#E6E6E6]">
+        <div className="lg:hidden bg-[#FDFBF7] text-gray-900 absolute top-full left-0 w-full px-6 pb-6 border-b border-gray-100 shadow-lg">
           <nav className="flex flex-col space-y-4 pt-4">
             {navLinks.map((link) => (
-              <a 
-                key={link.name} 
-                href={link.href} 
+              <a
+                key={link.name}
+                href={link.href}
                 onClick={(e) => handleClick(e, link.href)}
                 className="text-lg font-medium hover:text-[#17EBEB] transition-colors cursor-pointer"
               >
@@ -84,7 +84,7 @@ const Header: React.FC = () => {
               </a>
             ))}
             <a href="#" className="bg-[#FF7A00] text-white text-lg font-bold py-3 px-6 rounded-full hover:opacity-90 transition-opacity text-center mt-4">
-                Contacto
+              Contacto
             </a>
           </nav>
         </div>
