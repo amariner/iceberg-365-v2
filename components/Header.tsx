@@ -35,11 +35,11 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-[#FDFBF7]/80 backdrop-blur-xl border-b border-gray-100">
+    <header className="sticky top-0 z-50 bg-iceberg-bg/80 backdrop-blur-xl border-b border-gray-100 transition-all duration-300">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <div className="flex items-center">
+        <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="flex items-center">
           <img src="/images/logos/logo.png" alt="Iceberg365 Logo" className="h-8" />
-        </div>
+        </a>
 
         <nav className="hidden lg:flex items-center space-x-8">
           {navLinks.map((link) => (
@@ -55,13 +55,13 @@ const Header: React.FC = () => {
         </nav>
 
         <div className="hidden lg:flex items-center">
-          <a href="#contacto" className="bg-transparent border-2 border-[#ebf213] text-gray-900 text-sm font-semibold py-2.5 px-5 rounded-xl shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+          <a href="#contacto" className="bg-transparent border-2 border-iceberg-yellow text-gray-900 text-sm font-semibold py-2.5 px-5 rounded-xl shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
             Hablemos
           </a>
         </div>
 
         <div className="lg:hidden">
-          <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-[#2C2C2C]">
+          <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-[#2C2C2C] p-2">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"}></path>
             </svg>
@@ -70,25 +70,23 @@ const Header: React.FC = () => {
       </div>
 
       {/* Mobile Menu */}
-      {isMenuOpen && (
-        <div className="lg:hidden bg-[#FDFBF7] text-gray-900 absolute top-full left-0 w-full px-6 pb-6 border-b border-gray-100 shadow-lg">
-          <nav className="flex flex-col space-y-4 pt-4">
-            {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                onClick={(e) => handleClick(e, link.href)}
-                className="text-lg font-medium hover:text-[#17EBEB] transition-colors cursor-pointer"
-              >
-                {link.name}
-              </a>
-            ))}
-            <a href="#" className="bg-[#FF7A00] text-white text-lg font-bold py-3 px-6 rounded-full hover:opacity-90 transition-opacity text-center mt-4">
-              Contacto
+      <div className={`lg:hidden absolute top-full left-0 w-full bg-iceberg-bg border-b border-gray-100 shadow-lg transition-all duration-300 ease-in-out overflow-hidden ${isMenuOpen ? 'max-h-[400px] opacity-100' : 'max-h-0 opacity-0'}`}>
+        <nav className="flex flex-col space-y-4 px-6 py-6">
+          {navLinks.map((link) => (
+            <a
+              key={link.name}
+              href={link.href}
+              onClick={(e) => handleClick(e, link.href)}
+              className="text-lg font-medium text-gray-900 hover:text-iceberg-yellow transition-colors cursor-pointer"
+            >
+              {link.name}
             </a>
-          </nav>
-        </div>
-      )}
+          ))}
+          <a href="#contacto" className="bg-iceberg-yellow text-gray-900 text-lg font-bold py-3 px-6 rounded-xl hover:opacity-90 transition-opacity text-center mt-4 shadow-md">
+            Contacto
+          </a>
+        </nav>
+      </div>
     </header>
   );
 };

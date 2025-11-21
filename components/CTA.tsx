@@ -5,7 +5,7 @@ const CTA: React.FC = () => {
   return (
     <section id="contacto" className="py-24 bg-[#FDFBF7]">
       <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-12 items-center bg-white border border-gray-100 rounded-3xl p-12 shadow-2xl shadow-gray-200/50">
+        <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-12 items-center bg-white border border-gray-100 rounded-3xl p-8 md:p-12 shadow-2xl shadow-gray-200/50">
           <div>
             <p className="text-xs tracking-widest uppercase font-semibold text-gray-500">Próximo paso</p>
             <h2 className="font-dm-sans-black text-3xl md:text-[42px] text-gray-900 leading-[1.1] mt-3">
@@ -38,7 +38,7 @@ const CTA: React.FC = () => {
               alt="Reunión con clientes"
               className="w-full h-full object-cover"
             />
-            <div className="absolute top-6 right-6 bg-white/90 backdrop-blur-xl border border-gray-100 rounded-2xl p-5 shadow-lg text-sm text-gray-600 max-w-[220px]">
+            <div className="hidden md:block absolute top-6 right-6 bg-white/90 backdrop-blur-xl border border-gray-100 rounded-2xl p-5 shadow-lg text-sm text-gray-600 max-w-[220px]">
               Agenda flexible: sesiones en remoto adaptadas a tu equipo.
             </div>
           </div>

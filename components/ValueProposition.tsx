@@ -42,11 +42,11 @@ const services = [
 
 const ValueProposition: React.FC = () => {
   return (
-    <section id="servicios" className="bg-[#FDFBF7] py-24">
+    <section id="servicios" className="bg-iceberg-bg py-24">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center mb-20">
           <span className="text-xs font-semibold tracking-widest text-gray-500 uppercase mb-4 block">Nuestros Servicios</span>
-          <h2 className="font-dm-sans-black text-3xl md:text-4xl lg:text-5xl text-gray-900 leading-tight mb-6">
+          <h2 className="font-dm-sans font-bold text-3xl md:text-4xl lg:text-5xl text-gray-900 leading-tight mb-6">
             Todo lo que necesitas para vender más en marketplaces
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed">
@@ -58,9 +58,9 @@ const ValueProposition: React.FC = () => {
           {services.map((service) => (
             <div
               key={service.title}
-              className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group"
+              className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 group cursor-default"
             >
-              <div className="w-12 h-12 bg-gray-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#ebf213] transition-colors duration-300">
+              <div className="w-12 h-12 bg-gray-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-iceberg-yellow transition-colors duration-300">
                 {service.icon}
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">{service.title}</h3>

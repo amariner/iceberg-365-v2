@@ -15,15 +15,15 @@ const ArrowIcon: React.FC = () => (
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative overflow-hidden bg-[#FDFBF7] min-h-[calc(100vh-80px)] flex items-center">
+    <section className="relative overflow-hidden bg-iceberg-bg min-h-[calc(100vh-80px)] flex items-center">
       <div className="absolute inset-x-0 top-[-200px] sm:top-[-300px] mx-auto h-[480px] w-[480px] sm:h-[640px] sm:w-[640px] rounded-full bg-[#f5f0e4] blur-[160px] opacity-70 pointer-events-none" />
       <div className="container mx-auto px-6 py-12 relative">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="order-2 lg:order-1">
+          <div className="lg:order-1">
             <span className="inline-flex items-center gap-2 text-xs tracking-wider uppercase font-semibold text-gray-500 bg-white/50 border border-gray-200 rounded-full px-3 py-1.5 backdrop-blur-sm">
               Consultoría Amazon & Retail Media
             </span>
-            <h1 className="font-dm-sans-black text-4xl md:text-5xl lg:text-[64px] leading-[1.1] text-gray-900 mt-8 tracking-tight">
+            <h1 className="font-dm-sans font-bold text-3xl md:text-5xl lg:text-[64px] leading-[1.1] text-gray-900 mt-6 md:mt-8 tracking-tight">
               Escalamos marcas en Amazon y Marketplaces con estrategia y datos.
             </h1>
             <p className="text-lg md:text-xl text-gray-600 mt-6 max-w-xl leading-relaxed">
@@ -32,7 +32,7 @@ const Hero: React.FC = () => {
             <div className="mt-8 flex flex-wrap gap-4">
               <a
                 href="#servicios"
-                className="bg-[#ebf213] text-gray-900 px-8 py-4 rounded-2xl font-semibold shadow-lg shadow-[#ebf213]/20 hover:-translate-y-1 transition-all duration-300"
+                className="bg-iceberg-yellow text-gray-900 px-8 py-4 rounded-2xl font-semibold shadow-lg shadow-iceberg-yellow/20 hover:-translate-y-1 transition-all duration-300"
               >
                 Ver servicios
               </a>
@@ -44,14 +44,14 @@ const Hero: React.FC = () => {
               </a>
             </div>
           </div>
-          <div className="order-1 lg:order-2 flex justify-center">
+          <div className="lg:order-2 flex justify-center">
             <div className="relative w-full max-w-[600px] aspect-[4/5] lg:h-[calc(100vh-180px)] max-h-[700px] rounded-3xl overflow-hidden border border-gray-200 shadow-2xl shadow-gray-200/50 bg-white">
               <img
                 src="/images/hero-warehouse.png"
                 alt="Especialista gestionando logística en almacén"
                 className="w-full h-full object-cover"
               />
-              <div className="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-xl rounded-2xl border border-[#ebe7de] p-4 shadow-lg">
+              <div className="hidden md:block absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-xl rounded-2xl border border-[#ebe7de] p-4 shadow-lg">
                 <p className="text-sm text-[#4d4d4d]">Acompañamos a equipos de marketing y eCommerce que necesitan resultados visibles.</p>
                 <div className="flex items-center gap-4 mt-4">
                   <div className="flex -space-x-2">
