@@ -1,8 +1,19 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import Logo from './Logo';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const navLinks = [
     { name: 'Servicios', href: '#servicios' },
@@ -35,10 +46,15 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-iceberg-bg/80 backdrop-blur-xl border-b border-gray-100 transition-all duration-300">
+    <header
+      className={`fixed z-50 transition-all duration-500 ease-in-out ${isScrolled
+        ? 'top-4 left-4 right-4 lg:left-12 lg:right-12 w-auto rounded-2xl bg-iceberg-bg/90 shadow-lg border border-gray-100/50 backdrop-blur-xl'
+        : 'top-0 w-full bg-transparent backdrop-blur-none border-b border-transparent'
+        }`}
+    >
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="flex items-center">
-          <img src="/images/logos/logo.png" alt="Iceberg365 Logo" className="h-8" />
+          <Logo className="h-12 w-auto text-gray-800" />
         </a>
 
         <nav className="hidden lg:flex items-center space-x-8">
@@ -70,7 +86,7 @@ const Header: React.FC = () => {
       </div>
 
       {/* Mobile Menu */}
-      <div className={`lg:hidden absolute top-full left-0 w-full bg-iceberg-bg border-b border-gray-100 shadow-lg transition-all duration-300 ease-in-out overflow-hidden ${isMenuOpen ? 'max-h-[400px] opacity-100' : 'max-h-0 opacity-0'}`}>
+      <div className={`lg:hidden absolute top-full left-0 w-full bg-iceberg-bg border-b border-gray-100 shadow-lg transition-all duration-300 ease-in-out overflow-hidden ${isScrolled ? 'rounded-b-2xl' : ''} ${isMenuOpen ? 'max-h-[400px] opacity-100' : 'max-h-0 opacity-0'}`}>
         <nav className="flex flex-col space-y-4 px-6 py-6">
           {navLinks.map((link) => (
             <a

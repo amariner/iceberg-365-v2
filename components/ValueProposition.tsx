@@ -2,35 +2,35 @@ import React from 'react';
 
 const services = [
   {
-    title: 'Optimización de ACOS',
-    description: 'Ajustamos pujas, audiencias y creatividades para dominar Retail Media sin perder rentabilidad.',
+    title: 'Gestión de Marketplaces',
+    description: 'Expertos en Amazon y marketplaces. Estrategia, optimización de listings y gestión de cuentas para maximizar tus ventas.',
     icon: (
       <svg className="w-6 h-6 text-gray-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
       </svg>
     ),
   },
   {
-    title: 'Estrategia internacional',
-    description: 'Abrimos y pulimos tus listings para escalar a nuevos países con la misma consistencia de marca.',
+    title: 'Ecommerce y Tiendas Online',
+    description: 'Creamos tu tienda online desde cero. Especialistas en Shopify y desarrollo a medida para tu canal directo.',
     icon: (
       <svg className="w-6 h-6 text-gray-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
       </svg>
     ),
   },
   {
-    title: 'Operativa y catálogo',
-    description: 'Nos ocupamos del stock, compliance y contenidos para que cada lanzamiento sea impecable.',
+    title: 'Diseño Web y Automatizaciones',
+    description: 'Diseño web moderno y automatización de procesos para escalar tu negocio y mejorar la eficiencia operativa.',
     icon: (
       <svg className="w-6 h-6 text-gray-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
       </svg>
     ),
   },
   {
-    title: 'Marketing 360º',
-    description: 'Integramos la estrategia de marketplaces con tu eCommerce, CRM y paid media.',
+    title: 'Paid Media y Social Ads',
+    description: 'Estrategias de publicidad en Google, Facebook y Native Ads para atraer tráfico cualificado y aumentar conversiones.',
     icon: (
       <svg className="w-6 h-6 text-gray-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" />
@@ -47,10 +47,10 @@ const ValueProposition: React.FC = () => {
         <div className="max-w-3xl mx-auto text-center mb-20">
           <span className="text-xs font-semibold tracking-widest text-gray-500 uppercase mb-4 block">Nuestros Servicios</span>
           <h2 className="font-dm-sans font-bold text-3xl md:text-4xl lg:text-5xl text-gray-900 leading-tight mb-6">
-            Todo lo que necesitas para vender más en marketplaces
+            Soluciones integrales para tu crecimiento digital
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed">
-            Diagnosticamos, priorizamos y ejecutamos. Sin humo, solo resultados medibles.
+            Desde marketplaces hasta tu propio ecommerce. Estrategia, diseño y tecnología para escalar tu negocio.
           </p>
         </div>
 

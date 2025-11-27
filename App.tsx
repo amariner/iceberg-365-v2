@@ -14,7 +14,7 @@ const App: React.FC = () => {
   return (
     <div className="bg-[#FDFBF7] text-[#111827]">
       <Header />
-      <main>
+      <main className="pt-20">
         <FadeIn><Hero /></FadeIn>
         <FadeIn delay={100}><ClientLogos /></FadeIn>
         <FadeIn delay={100}><ValueProposition /></FadeIn>
