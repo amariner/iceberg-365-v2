@@ -34,7 +34,7 @@ const CTA: React.FC = () => {
           </div>
           <div className="relative rounded-3xl overflow-hidden h-full min-h-[300px]">
             <img
-              src="https://images.pexels.com/photos/1181352/pexels-photo-1181352.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              src="/images/contacto.jpeg"
               alt="Reunión con clientes"
               className="w-full h-full object-cover"
             />

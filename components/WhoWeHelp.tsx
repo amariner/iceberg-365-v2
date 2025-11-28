@@ -38,7 +38,7 @@ const WhoWeHelp: React.FC = () => {
           <div className="bg-gray-50 rounded-3xl border border-gray-100 p-6 shadow-xl shadow-gray-100/50">
             <div className="rounded-[24px] overflow-hidden">
               <img
-                src="https://images.pexels.com/photos/3184632/pexels-photo-3184632.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                src="/images/marketing-grupo.jpeg"
                 alt="Equipo colaborando"
                 className="w-full h-[360px] object-cover"
               />
