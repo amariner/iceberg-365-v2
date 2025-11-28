@@ -1,29 +1,31 @@
-
 import React from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import ValueProposition from './components/ValueProposition';
-import WhoWeHelp from './components/WhoWeHelp';
-import CTA from './components/CTA';
-import Footer from './components/Footer';
-import ClientLogos from './components/ClientLogos';
-import Resources from './components/Resources';
-import FadeIn from './components/FadeIn';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout';
+import HomePage from './pages/HomePage';
+import MarketplacesPage from './pages/MarketplacesPage';
+import EcommercePage from './pages/EcommercePage';
+import WebDesignPage from './pages/WebDesignPage';
+import PaidMediaPage from './pages/PaidMediaPage';
+import GeoSeoPage from './pages/GeoSeoPage';
+import AiIntegrationsPage from './pages/AiIntegrationsPage';
+import LegalPage from './pages/LegalPage';
 
 const App: React.FC = () => {
   return (
-    <div className="bg-[#FDFBF7] text-[#111827]">
-      <Header />
-      <main className="pt-20">
-        <FadeIn><Hero /></FadeIn>
-        <FadeIn delay={100}><ClientLogos /></FadeIn>
-        <FadeIn delay={100}><ValueProposition /></FadeIn>
-        <FadeIn delay={100}><WhoWeHelp /></FadeIn>
-        <FadeIn delay={100}><Resources /></FadeIn>
-        <FadeIn delay={100}><CTA /></FadeIn>
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<HomePage />} />
+          <Route path="servicios/marketplaces" element={<MarketplacesPage />} />
+          <Route path="servicios/ecommerce" element={<EcommercePage />} />
+          <Route path="servicios/diseno-web" element={<WebDesignPage />} />
+          <Route path="servicios/paid-media" element={<PaidMediaPage />} />
+          <Route path="servicios/geo-seo" element={<GeoSeoPage />} />
+          <Route path="servicios/integraciones-ia" element={<AiIntegrationsPage />} />
+          <Route path="aviso-legal" element={<LegalPage />} />
+        </Route>
+      </Routes>
+    </Router>
   );
 };
 

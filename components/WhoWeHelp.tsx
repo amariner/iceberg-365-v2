@@ -13,7 +13,7 @@ const WhoWeHelp: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
-            <p className="text-xs tracking-widest uppercase font-semibold text-gray-500">Expertise</p>
+            <p className="text-xs tracking-widest uppercase font-semibold text-gray-500">Nosotros</p>
             <h2 className="font-dm-sans-black text-3xl md:text-[40px] text-gray-900 leading-[1.1]">
               Integramos marketing, ventas y operaciones para que cada mercado funcione como un reloj.
             </h2>

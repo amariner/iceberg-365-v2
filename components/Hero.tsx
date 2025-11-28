@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
               Consultoría Amazon & Retail Media
             </span>
             <h1 className="font-dm-sans font-bold text-3xl md:text-5xl lg:text-[64px] leading-[1.1] text-gray-900 mt-6 md:mt-8 tracking-tight">
-              Aumenta tus ventas en Amazon y Marketplaces con una estrategia basada en datos reales.
+              Vende más en Amazon y Marketplaces con estrategia basada en datos.
             </h1>
             <p className="text-lg md:text-xl text-gray-600 mt-6 max-w-xl leading-relaxed">
               Nos ocupamos de la estrategia, la operativa y la medición para que te centres en lo importante: tu producto y tus clientes.
@@ -32,7 +32,7 @@ const Hero: React.FC = () => {
             <div className="mt-8 flex flex-wrap gap-4">
               <a
                 href="#servicios"
-                className="bg-iceberg-primary text-white px-8 py-4 rounded-2xl font-bold shadow-lg shadow-iceberg-primary/30 hover:-translate-y-1 transition-all duration-300"
+                className="bg-gradient-to-r from-[#FFB088] to-[#FFA07A] text-white px-8 py-4 rounded-2xl font-bold shadow-lg shadow-orange-200/40 hover:-translate-y-1 transition-all duration-300"
               >
                 Solicitar auditoría
               </a>
@@ -44,7 +44,7 @@ const Hero: React.FC = () => {
               </a>
             </div>
           </div>
-          <div className="lg:order-2 flex justify-center">
+          <div className="lg:order-2 flex justify-end">
             <div className="relative w-full max-w-[600px] aspect-[4/5] lg:h-[calc(100vh-180px)] max-h-[700px] rounded-3xl overflow-hidden border border-gray-200 shadow-2xl shadow-gray-200/50 bg-white">
               <img
                 src="/images/hero-warehouse.png"

@@ -17,7 +17,7 @@ const CTA: React.FC = () => {
             <div className="mt-8 flex flex-wrap gap-4">
               <a
                 href="mailto:hola@iceberg365.com"
-                className="bg-iceberg-primary text-white px-8 py-4 rounded-2xl font-bold hover:-translate-y-1 transition-all duration-300 shadow-lg shadow-iceberg-primary/30"
+                className="bg-gradient-to-r from-[#FFB088] to-[#FFA07A] text-white px-8 py-4 rounded-2xl font-bold hover:-translate-y-1 transition-all duration-300 shadow-lg shadow-orange-200/40"
               >
                 Quiero escalar mi marca
               </a>
