@@ -46,10 +46,13 @@ const Hero: React.FC = () => {
           </div>
           <div className="lg:order-2 flex justify-end">
             <div className="relative w-full max-w-[600px] aspect-[4/5] lg:h-[calc(100vh-180px)] max-h-[700px] rounded-3xl overflow-hidden border border-gray-200 shadow-2xl shadow-gray-200/50 bg-white">
-              <img
-                src="/images/hero-warehouse.png"
-                alt="Especialista gestionando logística en almacén"
-                className="w-full h-full object-cover"
+              <video
+                src="/videos/video-hero-3.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-full object-cover scale-[1.15]"
               />
               <div className="hidden md:block absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-xl rounded-2xl border border-[#ebe7de] p-4 shadow-lg">
                 <p className="text-sm text-[#4d4d4d]">Acompañamos a equipos de marketing y eCommerce que necesitan resultados visibles.</p>

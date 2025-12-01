@@ -2,8 +2,8 @@
 import React from 'react';
 
 const logos = [
-  { name: 'Amazon', src: 'https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg', className: 'h-6' },
-  { name: 'Miravia', src: '/images/logos/miravia.png', className: 'h-9' },
+  { name: 'Amazon', src: 'https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg', className: 'h-8' },
+  { name: 'Miravia', src: '/images/logos/miravia.png', className: 'h-[58px] mb-5' },
 ];
 
 const ClientLogos: React.FC = () => {

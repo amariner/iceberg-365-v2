@@ -3,11 +3,11 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import HomePage from './pages/HomePage';
 import MarketplacesPage from './pages/MarketplacesPage';
-import EcommercePage from './pages/EcommercePage';
-import WebDesignPage from './pages/WebDesignPage';
-import PaidMediaPage from './pages/PaidMediaPage';
-import GeoSeoPage from './pages/GeoSeoPage';
-import AiIntegrationsPage from './pages/AiIntegrationsPage';
+import ShopifyPage from './pages/ShopifyPage';
+import RetentionPage from './pages/RetentionPage';
+import PaidSocialPage from './pages/PaidSocialPage';
+import SeoPage from './pages/SeoPage';
+import AiOpsPage from './pages/AiOpsPage';
 import LegalPage from './pages/LegalPage';
 
 const App: React.FC = () => {
@@ -17,11 +17,11 @@ const App: React.FC = () => {
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
           <Route path="servicios/marketplaces" element={<MarketplacesPage />} />
-          <Route path="servicios/ecommerce" element={<EcommercePage />} />
-          <Route path="servicios/diseno-web" element={<WebDesignPage />} />
-          <Route path="servicios/paid-media" element={<PaidMediaPage />} />
-          <Route path="servicios/geo-seo" element={<GeoSeoPage />} />
-          <Route path="servicios/integraciones-ia" element={<AiIntegrationsPage />} />
+          <Route path="servicios/shopify-dtc" element={<ShopifyPage />} />
+          <Route path="servicios/retention-email" element={<RetentionPage />} />
+          <Route path="servicios/paid-social" element={<PaidSocialPage />} />
+          <Route path="servicios/seo-transaccional" element={<SeoPage />} />
+          <Route path="servicios/ia-ops" element={<AiOpsPage />} />
           <Route path="aviso-legal" element={<LegalPage />} />
         </Route>
       </Routes>

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const services = [
   {
     title: 'Gestión de Marketplaces',
-    description: 'Expertos en Amazon y marketplaces. Estrategia, optimización de listings y gestión de cuentas para maximizar tus ventas.',
+    description: 'Estrategia integral en Amazon y marketplaces. Maximizamos la rentabilidad de tu catálogo, protegemos tu marca y gestionamos la expansión internacional con enfoque en margen neto.',
     href: '/servicios/marketplaces',
     icon: (
       <svg className="w-6 h-6 text-gray-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -13,9 +13,9 @@ const services = [
     ),
   },
   {
-    title: 'Ecommerce y Tiendas Online',
-    description: 'Creamos tu tienda online desde cero. Especialistas en Shopify y desarrollo a medida para tu canal directo.',
-    href: '/servicios/ecommerce',
+    title: 'Ecommerce Shopify',
+    description: 'Diseñamos ecosistemas de venta directa sobre Shopify. Diseño de páginas web, tiendas rápidas y escalables integradas nativamente con tu logística y Amazon, listas para facturar desde el día uno.',
+    href: '/servicios/shopify-dtc',
     icon: (
       <svg className="w-6 h-6 text-gray-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
@@ -23,9 +23,9 @@ const services = [
     ),
   },
   {
-    title: 'Diseño Web y Automatizaciones',
-    description: 'Diseño web moderno y automatización de procesos para escalar tu negocio y mejorar la eficiencia operativa.',
-    href: '/servicios/diseno-web',
+    title: 'Retention & Email Marketing',
+    description: 'Sistemas automatizados para fidelizar clientes. Aumentamos el valor de vida (LTV) y generamos ventas recurrentes sin coste publicitario, convirtiendo visitas en comunidad.',
+    href: '/servicios/retention-email',
     icon: (
       <svg className="w-6 h-6 text-gray-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -33,9 +33,9 @@ const services = [
     ),
   },
   {
-    title: 'Paid Media y Social Ads',
-    description: 'Estrategias de publicidad en Google, Facebook y Native Ads para atraer tráfico cualificado y aumentar conversiones.',
-    href: '/servicios/paid-media',
+    title: 'Paid Social for Sales',
+    description: 'Publicidad en Google Ads, Meta y TikTok con enfoque financiero (ROAS). Estructuras de campaña avanzadas para capturar demanda y generar transacciones reales.',
+    href: '/servicios/paid-social',
     icon: (
       <svg className="w-6 h-6 text-gray-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" />
@@ -44,9 +44,9 @@ const services = [
     ),
   },
   {
-    title: 'GEO y SEO',
-    description: 'Optimización de posicionamiento local y orgánico. Estrategias SEO avanzadas y gestión de Google Business Profile.',
-    href: '/servicios/geo-seo',
+    title: 'SEO Transaccional',
+    description: 'Posicionamiento orgánico para catálogos extensos. Optimizamos miles de referencias para capturar búsquedas con alta intención de compra en Google, superando a los generalistas.',
+    href: '/servicios/seo-transaccional',
     icon: (
       <svg className="w-6 h-6 text-gray-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -54,9 +54,9 @@ const services = [
     ),
   },
   {
-    title: 'Integraciones IA',
-    description: 'Implementación de soluciones de inteligencia artificial para automatizar procesos y optimizar tu negocio.',
-    href: '/servicios/integraciones-ia',
+    title: 'Inteligencia Artificial & Ops',
+    description: 'Implementación de agentes de IA para automatizar catálogos, atención al cliente y procesos repetitivos. Reducimos tu carga operativa para que escales ventas sin disparar costes de personal.',
+    href: '/servicios/ia-ops',
     icon: (
       <svg className="w-6 h-6 text-gray-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />

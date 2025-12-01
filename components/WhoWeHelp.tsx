@@ -2,9 +2,9 @@
 import React from 'react';
 
 const bullets = [
-  'Auditorías profundas de catálogo y posicionamiento.',
-  'Planes de lanzamiento y expansión 100% medibles.',
-  'Automatización de reporting y gobierno de datos.',
+  'Auditorías de catálogo y posicionamiento.',
+  'Estrategias de expansión medibles.',
+  'Automatización y gobierno de datos.',
 ];
 
 const WhoWeHelp: React.FC = () => {
@@ -15,10 +15,10 @@ const WhoWeHelp: React.FC = () => {
           <div className="space-y-8">
             <p className="text-xs tracking-widest uppercase font-semibold text-gray-500">Nosotros</p>
             <h2 className="font-dm-sans-black text-3xl md:text-[40px] text-gray-900 leading-[1.1]">
-              Integramos marketing, ventas y operaciones para que cada mercado funcione como un reloj.
+              Marketing, ventas y operaciones en sintonía.
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Trabajamos junto a equipos internos que necesitan foco y acompañamiento senior. Conectamos marketplaces, eCommerce y retail para que tus decisiones tengan contexto y números.
+              Potenciamos equipos internos con visión senior. Unificamos marketplaces, eCommerce y retail para decisiones con datos.
             </p>
             <ul className="space-y-4">
               {bullets.map((bullet) => (
@@ -31,7 +31,7 @@ const WhoWeHelp: React.FC = () => {
             <div className="flex items-center gap-4 pt-4">
               <div className="text-4xl font-dm-sans-black text-gray-900">+8</div>
               <p className="text-sm uppercase tracking-widest text-gray-500 font-semibold">
-                años construyendo estrategias para marcas líderes
+                años escalando marcas líderes
               </p>
             </div>
           </div>
