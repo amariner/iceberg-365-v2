@@ -3,7 +3,7 @@ import React from 'react';
 
 const CTA: React.FC = () => {
   return (
-    <section id="contacto" className="py-24 bg-[#FDFBF7]">
+    <section id="contacto" className="py-24 bg-iceberg-bg">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-12 items-center bg-white border border-gray-100 rounded-3xl p-8 md:p-12 shadow-2xl shadow-gray-200/50">
           <div>

@@ -16,7 +16,7 @@ const ArrowIcon: React.FC = () => (
 const Hero: React.FC = () => {
   return (
     <section className="relative overflow-hidden bg-iceberg-bg min-h-[calc(100vh-80px)] flex items-center">
-      <div className="absolute inset-x-0 top-[-200px] sm:top-[-300px] mx-auto h-[480px] w-[480px] sm:h-[640px] sm:w-[640px] rounded-full bg-[#f5f0e4] blur-[160px] opacity-70 pointer-events-none" />
+      <div className="absolute inset-x-0 top-[-200px] sm:top-[-300px] mx-auto h-[480px] w-[480px] sm:h-[640px] sm:w-[640px] rounded-full bg-[#E2E8F0] blur-[160px] opacity-70 pointer-events-none" />
       <div className="container mx-auto px-6 py-12 relative">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="lg:order-1">
@@ -54,7 +54,7 @@ const Hero: React.FC = () => {
                 playsInline
                 className="w-full h-full object-cover scale-[1.15]"
               />
-              <div className="hidden md:block absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-xl rounded-2xl border border-[#ebe7de] p-4 shadow-lg">
+              <div className="hidden md:block absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-xl rounded-2xl border border-[#E2E8F0] p-4 shadow-lg">
                 <p className="text-sm text-[#4d4d4d]">Acompañamos a equipos de marketing y eCommerce que necesitan resultados visibles.</p>
                 <div className="flex items-center gap-4 mt-4">
                   <div className="flex -space-x-2">

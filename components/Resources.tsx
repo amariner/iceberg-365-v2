@@ -45,7 +45,7 @@ const Resources: React.FC = () => {
           {resources.map((resource) => (
             <article
               key={resource.title}
-              className={`bg-gradient-to-b ${resource.color} border border-[#ebe7de] rounded-[28px] p-6 flex flex-col min-h-[220px]`}
+              className={`bg-gradient-to-b ${resource.color} border border-[#E2E8F0] rounded-[28px] p-6 flex flex-col min-h-[220px]`}
             >
               <span className="text-xs uppercase tracking-[0.4em] text-[#969186]">{resource.tag}</span>
               <h3 className="text-xl font-semibold text-[#131313] mt-4">{resource.title}</h3>
